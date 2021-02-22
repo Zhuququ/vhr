@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>入职欢迎邮件</title>
+</head>
+<body>
+欢迎<span th:text="${name}">加入 Zero 大家庭</span>
+<table>
+    <tr>
+        <th>姓名：</th>
+        <td th:text="${name}"></td>
+    </tr>
+    <tr>
+        <th>部门：</th>
+        <td th:text="${departmentName}"></td>
+    </tr>
+    <tr>
+        <th>职位：</th>
+        <td th:text="${positionName}"></td>
+    </tr>
+    <tr>
+        <th>职称：</th>
+        <td th:text="${joblevelName}"></td>
+    </tr>
+</table>
+
+<p>希望在未来的日子里，携手共进！</p>
+</body>
+</html>
